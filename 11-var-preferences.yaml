@@ -1,8 +1,8 @@
 - name: variables preference demo
   hosts: local
   connection: local
-  vars:
-    message: "This is from playbook vars"
+  # vars:
+  #   message: "This is from playbook vars"
   # vars_prompt:
   #   - name: "message"
   #     prompt: "Enter your message"

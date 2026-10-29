@@ -4,3 +4,6 @@
   tasks:
     - name: Ping local host
       ping:
+    - name: print
+      debug:
+        msg: "Hello World from Ansible"

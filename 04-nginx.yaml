@@ -1,0 +1,13 @@
+- name: Install nginx and start the service
+  hosts: roboshop-frontend
+  become: true
+  tasks:
+    - name: Install nginx
+      package:
+        name: nginx
+        state: present
+    - name: Start nginx service
+      service: 
+        name: nginx
+        state: started
+        enabled: true

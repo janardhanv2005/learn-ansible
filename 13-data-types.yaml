@@ -18,9 +18,9 @@
   - name: Print info and type
     debug:
       msg: |
-        Course: {{ course }}, Type: {{ course | type }}
-        Instructor: {{ instructor }}, Type: {{ instructor | type }}
-        Duration: {{ duration_in_hours }}, Type: {{ duration_in_hours | type }}
-        Is Live Session: {{ is_live_session }}, Type: {{ is_live_session | type }}
-        Topics: {{ topics }}, Type: {{ topics | type }}
-        More Details: {{ more_details }}, Type: {{ more_details | type }}
+        Course: {{ course }}, Type: {{ course | type_debug }}
+        Instructor: {{ instructor }}, Type: {{ instructor | type_debug }}
+        Duration: {{ duration_in_hours }}, Type: {{ duration_in_hours | type_debug }}
+        Is Live Session: {{ is_live_session }}, Type: {{ is_live_session | type_debug }}
+        Topics: {{ topics }}, Type: {{ topics | type_debug }}
+        More Details: {{ more_details }}, Type: {{ more_details | type_debug }}

@@ -1,0 +1,20 @@
+- name: Course Information
+  hosts: local
+  connection: local
+  vars:
+    course: "AI Ops with dev sec ops"
+    instructor: "John Doe"
+    duration_in_hours: 150
+    is_live_session: true
+    topics:
+      - "Ansible"
+      - "Docker"
+      - "Kubernetes"
+      - "CI/CD"
+    more_details:
+      trainer: "John Doe"
+      months: 4.5
+  tasks:
+    - name: Print course details
+      debug:
+        msg: "Course: {{ course }}, Instructor: {{ instructor }}, Duration: {{ duration }}"

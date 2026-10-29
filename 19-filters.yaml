@@ -7,6 +7,7 @@
       - Janardhan
       - Rao
       - Velagaleti
+    topic: "ANSIBLE"
   tasks:
     - name: Print the name
       debug:
@@ -17,3 +18,6 @@
     - name: Print names
       debug:
         msg: "Names are {{ names | join(', ') }}"
+    - name: Print topic
+      debug:
+        msg: "Topic in lower case: {{ topic | lower }}"

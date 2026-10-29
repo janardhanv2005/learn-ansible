@@ -2,10 +2,16 @@
   hosts: local
   connection: local
   vars:
-    msgThis is from playbook vars
+    message: "This is from playbook vars"
+  vars_prompt:
+    - name: "message"
+      prompt: "Enter your message"
+      private: no
+  vars_files:
+    - course.yaml
   tasks:
     - name: task level
       vars:
-        msg"This is from task level vars"
+        message: "This is from task level vars"
       debug:
-        msg: "{{ msg }}"
+        msg: "{{ message }}"

@@ -11,7 +11,7 @@
     - course.yaml
   tasks:
     - name: task level
-      vars:
-        message: "This is from task level vars"
+      # vars:
+      #   message: "This is from task level vars"
       debug:
         msg: "{{ message }}"

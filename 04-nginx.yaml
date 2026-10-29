@@ -1,5 +1,5 @@
 - name: Install nginx and start the service
-  hosts: roboshop-frontend
+  hosts: frontend
   become: true
   tasks:
     - name: Install nginx

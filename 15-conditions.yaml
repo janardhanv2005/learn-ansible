@@ -1,6 +1,7 @@
 - name: Print OS is Redhat or not
   hosts: local
   connection: local
+  become: true
   tasks:
     - name: nstall nginx on Redhat
       dnf:

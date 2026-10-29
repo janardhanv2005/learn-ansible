@@ -1,3 +1,4 @@
 course: "Ansible"
 instructor: "John Doe"
 duration: "5 hours"
+msg: "This is from vars file"

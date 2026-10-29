@@ -1,0 +1,11 @@
+- name: variables preference demo
+  hosts: local
+  connection: local
+  vars:
+    msgThis is from playbook vars
+  tasks:
+    - name: task level
+      vars:
+        msg"This is from task level vars"
+      debug:
+        msg: "{{ msg }}"

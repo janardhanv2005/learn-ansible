@@ -15,6 +15,12 @@
       trainer: "John Doe"
       months: 4.5
   tasks:
-    - name: Print course details
-      debug:
-        msg: "Course: {{ course }}, Instructor: {{ instructor }}, Duration: {{ duration }}"
+  - name: Print info and type
+    debug:
+      msg: |
+        Course: {{ course }}, Type: {{ course | type }}
+        Instructor: {{ instructor }}, Type: {{ instructor | type }}
+        Duration: {{ duration_in_hours }}, Type: {{ duration_in_hours | type }}
+        Is Live Session: {{ is_live_session }}, Type: {{ is_live_session | type }}
+        Topics: {{ topics }}, Type: {{ topics | type }}
+        More Details: {{ more_details }}, Type: {{ more_details | type }}

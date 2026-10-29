@@ -1,0 +1,7 @@
+- name: variables demo
+  hosts: local
+  connection: local
+  tasks:
+    - name: Print Person Name
+      debug:
+        msg: "Person  Name: {{ person_name }}"

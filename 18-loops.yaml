@@ -8,7 +8,7 @@
       - {name: mysql, state: present}
       - {name: net-tools, state: present}
       - {name: git, state: present}
-      - {name: htop, state: absent
+      - {name: htop, state: absent}
   tasks:
     - name: Install multiple packages
       package:

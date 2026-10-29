@@ -1,6 +1,6 @@
 - name: Gather Facts
   hosts: local
-  connectionn: local
+  connection: local
   tasks:
     - name: Print gathered facts
       debug:

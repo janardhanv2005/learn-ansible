@@ -1,0 +1,14 @@
+- name: variables from promt demo
+  hosts: local
+  connection: local
+  vars_prompt:
+    - name: "username"
+      prompt: "Enter your username"
+      private: no
+    - name: "password"
+      prompt: "Enter your password"
+      private: yes
+  tasks:
+    - name: Print user credentials
+      debug:
+        msg: "Username: {{ username }}, Password: {{ password }}"

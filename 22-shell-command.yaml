@@ -1,6 +1,6 @@
 - name: shell command demo
   hosts: local
-  connnections: local
+  connection: local
   tasks:
     - name: run shell command
       command: cat /etc/passwd | grep ec2-user

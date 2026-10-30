@@ -11,8 +11,8 @@
       debug:
         msg: "{{ shell_command_output.stdout }}"
     - name: get the files information
-      command: ls -la > /tmp/files_info.txt
-      #hell: ls -l > /tmp/files_info.txt
+      # command: ls -la > /tmp/files_info.txt
+      shell: ls -l > /tmp/files_info.txt
       register: file_info
 
     - name: print files information

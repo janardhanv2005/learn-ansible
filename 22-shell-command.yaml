@@ -10,3 +10,11 @@
     - name: print shell command output
       debug:
         msg: "{{ shell_command_output.stdout }}"
+    - name: get the files information
+      command: ls -la > /tmp/files_info.txt
+      #hell: ls -l > /tmp/files_info.txt
+      register: file_info
+
+    - name: print files information
+      debug:
+        msg: "{{ file_info.stdout }}"

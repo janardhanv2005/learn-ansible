@@ -5,4 +5,11 @@
   tasks:
     - name: check roboshop user exists or not
       command: id roboshop
-      
+      register: roboshop_user_output
+      ignore_errors: true
+
+    - name: create roboshop user
+      user:
+        name: roboshop
+        state: present
+      when: roboshop_user_output.rc != 0

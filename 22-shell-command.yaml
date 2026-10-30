@@ -1,0 +1,11 @@
+- name: shell command demo
+  hosts: local
+  connnection: local
+  tasks:
+    - name: run shell command
+      command: cat /etc/passwd | grep ec2-user
+      register: shell_command_output
+
+    - name: print shell command output
+      debug:
+        msg: "{{ shell_command_output.stdout }}"

@@ -3,7 +3,8 @@
   connection: local
   tasks:
     - name: run shell command
-      command: cat /etc/passwd | grep ec2-user
+      # command: cat /etc/passwd | grep ec2-user
+      shell: cat /etc/passwd | grep ec2-user
       register: shell_command_output
 
     - name: print shell command output
